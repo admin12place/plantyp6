@@ -22,7 +22,7 @@ Text Domain: plantyp6child
     margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: blanchedalmond;
+    background-color: #FFFFFF;
     font-family: syne, Arial, sans-serif;
 }
 
@@ -102,13 +102,48 @@ nav ul li :hover {
     font-size: 16px;
 }
 
+/*CSS FORMULAIRE DE CONTACT*/
+
+.ff-btn.ff-btn-submit.ff-btn-lg.submit_button_p6.ff_btn_no_style {/*Style du bouton submit*/
+    background-color: #E0B9B4;
+    border-style: none;
+    border-radius: 5px;
+    color:#FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    padding: 9px 72px;
+    font-family: syne;
+}
+
+.ff-btn.ff-btn-submit.ff-btn-lg.submit_button_p6.ff_btn_no_style:hover {/*Style du bouton submit survolé*/
+    background-color: #C02E44;
+}
+
+.fluentform .ff-el-form-control {/*Style des champs du formulaire*/
+    border-style: none;
+    border-radius: 7px;
+    resize: none;
+    padding: 13px 0px;
+    font-size: 17px;
+}
+
+#label_ff_1_message, #label_ff_1_email, #label_ff_1_input_text {/*Style des étiquettes*/
+    font-size: 20px;
+    font-weight: 400;
+}
+
 /*MEDIA QUERIES*/
 
 @media (max-width: 850px) {
 
+    .headerp6{
+        height: 100px;
+    }
+
     nav {
         margin-left: auto;
-        width: 187px;
+        width: 185px;
     }
 
     nav ul {
@@ -122,14 +157,29 @@ nav ul li :hover {
         text-align: center;
         border: solid 1px #cacaca;
         border-radius: 9px;
-        margin: 1px 0px;
+        margin: 3px 0px;
     }
 
     nav ul li a{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     nav ul li:last-child {
         padding: 0px;
     }
 }
+
+@media (max-width: 450px) {
+    nav ul{
+        margin-left: 10%;
+    }
+    nav ul li {
+        min-width: 100px;
+    }
+
+    nav ul li a{
+        font-size: 12px;
+    }
+
+}
+
