@@ -6,3 +6,8 @@ function theme_enqueue_styles()
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
 }
+
+require_once get_stylesheet_directory() . '/form-command.php';
+
+add_shortcode('formulaire_p6_commande', 'command_form_p6');
+
