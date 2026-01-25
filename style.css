@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: plantyp6child
 */
 
-@import url('https://fonts.googleapis.com/css2?family=syne:wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&1,400display=swap');
 
 #wrapper {
     width: 100%;
@@ -118,6 +118,7 @@ nav ul li :hover {
 
 .ff-btn.ff-btn-submit.ff-btn-lg.submit_button_p6.ff_btn_no_style:hover {/*Style du bouton submit survolé*/
     background-color: #C02E44;
+    cursor: pointer;
 }
 
 .fluentform .ff-el-form-control {/*Style des champs du formulaire*/
@@ -133,9 +134,9 @@ nav ul li :hover {
     font-weight: 400;
 }
 
-/*CSS FORMULAIRE DE COMMANDE*/
-
-
+/*******************************************************/
+/*************CSS FORMULAIRE DE COMMANDE****************/
+/*******************************************************/
 
 /*Comportement du bloc images et compteur*/
 #bloc-images {
@@ -162,10 +163,13 @@ nav ul li :hover {
 .bt-4 {
     background-image: url(/wp-content/uploads/2026/01/Studio_citron.png);
     }
-
-.image-count {
-    max-width: 192px;
-    }
+    
+.bloc-2images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 29px;
+}
 
     /*Mise en forme de chaque bloc image*/
 .background-title {
@@ -192,9 +196,21 @@ h4.full-center-title {
     display: block;
     margin: 16px auto 39px auto;
     text-align: center;
-    width: 65px;
+    width: 39px;
     height: 56px;
     font-size: 14px;
+}
+
+/*Suppression des flèches dans les <input type="number">*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 /*Mise en forme du séparateur horizontal*/
@@ -220,8 +236,9 @@ h4.full-center-title {
     margin: 0 auto;
 }
 
+/*position et forme des 2 blocs d'input et leur titre*/
 .bloc-livraison {
-    margin-left: 45px;
+    margin-left: 0px;
 }
 
 .bloc-informations {
@@ -232,18 +249,77 @@ h4.full-center-title {
     color: #FFFFFF;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 29px;
+    /*margin-bottom: 29px;*/
 }
 
+/*Séparateur vertical*/
 .form-vertical-separator {
     border: solid 1px #FFFFFF;
-    height: 447px;
-
+    height: 447px; 
 }
 
-/*MEDIA QUERIES*/
+/*Mise en forme des zones de texte et leurs labels*/
+.bloc-form-champs {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-cmd {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 13px;
+    margin-top: 29px;
+}
+
+input.input-cmd {
+    height: 69px;
+    border: solid 1px #FFFFFF;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: inherit;
+}
+
+.bloc-form-left {
+    padding-right: 45px;
+}
+
+.bloc-form-right {
+    padding-left: 45px;
+}
+
+/*Position et mise en forme du bouton commander*/
+input.submit-button-cmd {
+    background-color: #E0B9B4;
+    border-style: none;
+    border-radius: 5px;
+    color:#FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    padding: 9px 72px;
+    font-family: inherit;
+}
+
+input.submit-button-cmd:hover {
+    background-color: #C02E44;
+    cursor: pointer;
+}
+
+.cmd-form-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    margin-bottom: 93px;
+}
+
+/**************************************************/
+/*****************MEDIA QUERIES********************/
+/**************************************************/
 
 @media (max-width: 850px) {
+
+    /************Responsive du header**************/
 
     .headerp6{
         height: 100px;
@@ -275,9 +351,50 @@ h4.full-center-title {
     nav ul li:last-child {
         padding: 0px;
     }
-}
+    
+/********Responsive du formulaire de commande******/
+
+    #bloc-images {
+        flex-direction: column;
+    }
+
+    .bloc-2images {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .form-vertical-separator {
+        display: none;
+    }
+
+    #bloc-form {
+        flex-direction: column;
+    }
+
+    .bloc-form-right, .bloc-form-left {
+        padding: 0px;
+    }
+    
+    h3.bloc-form-title {
+        margin-bottom: 0px;
+    }
+
+    .bloc-form-right {
+        margin-top: 53px;
+    }
+
+    input.input-cmd {
+        height: 40px;
+    }
+
+
+} 
 
 @media (max-width: 450px) {
+
+    /**************Responsive du header****************/
+
     nav ul{
         margin-left: 10%;
     }
@@ -287,6 +404,34 @@ h4.full-center-title {
 
     nav ul li a{
         font-size: 12px;
+    }
+
+    /********Responsive du formulaire de commande******/
+
+    #bloc-images {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .bloc-2images {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .image-count {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .counter-cmd {
+        margin: auto 0;
+    }
+
+    .input-cmd {
+        width: 80%;
     }
 
 }
