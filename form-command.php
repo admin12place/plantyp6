@@ -99,11 +99,13 @@ function command_form_p6(){
 
         <div class="cmd-form-submit">
             <input type="submit" name="command-submit" class="submit-button-cmd" value="Commander"/>
+
+            <?php if ( isset ($_GET['sent']) && $_GET['sent'] === '1' ) : ?>
+                <p class="submit-msg" >Commande envoyée avec succès.</p>
+            <?php endif; ?>
         </div>
 
-        <?php if ( isset($_POST['command-submit']) ) : ?>
-            <p>Commande envoyée avec succès.</p>
-        <?php endif; ?>
+        
 
     </main>
 
