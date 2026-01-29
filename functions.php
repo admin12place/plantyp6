@@ -75,6 +75,7 @@ function send_command_form()
 add_action( 'init', 'send_command_form');
 
 add_filter( 'wp_nav_menu_items', 'add_admin_link_before_last_item', 10, 2 );
+
 function add_admin_link_before_last_item( $items, $args ) {
     
     // S'il n'y a pas d'utilisateur loggé ou si le menu n'est pas le menu principal,
@@ -87,21 +88,33 @@ function add_admin_link_before_last_item( $items, $args ) {
         return $items;
     }
 
-    // Ecriture du nouvel élement de menu
-    $new_item = sprintf(
-        '<li class="menu-item menu-item-admin">
-            <a href="%s">Admin</a>
-        </li>',
-        esc_url( admin_url() )
-    );
-
     // Découper la chaine contenant les <li> existants en un tableau
     preg_match_all( '/<li[^>]*>.*?<\/li>/s', $items, $matches );
     $menu_items = $matches[0];
     $count = count( $menu_items );
 
-    // S'il n'y a qu'un seul item (ou aucun), on ajoute à la fin
-    if ( $count < 2 ) {
+    switch ( $count ) {
+        case 0:
+            $new_item = sprintf(
+            '<li class="menu-item menu-item-admin">
+                <a href="%s" class="item-alone">Admin</a>
+            </li>',
+            esc_url( admin_url() )
+            );
+        break;
+        
+        default:
+            $new_item = sprintf(
+            '<li class="menu-item menu-item-admin">
+                <a href="%s">Admin</a>
+            </li>',
+            esc_url( admin_url() )
+            );
+        break;
+    }
+
+    // S'il n'y a aucun item, on ajoute à la fin
+    if ( $count === 0 ) {
         $menu_items[] = $new_item;
     } else {
         // Insertion en avant-dernière position

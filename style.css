@@ -96,6 +96,12 @@ nav ul li :hover {
     font-weight: 700;
 }
 
+.item-alone:last-child {
+    color: #000000;
+    background-color: #FFFFFF;
+    padding-left: 0px;
+}
+
 /*CSS DU FOOTER*/
 
 #can-line {
@@ -120,11 +126,9 @@ nav ul li :hover {
     border-style: none;
     border-radius: 5px;
     color:#FFFFFF;
-    font-size: 15px;
-    font-weight: 400;
+    font: 400 15px Syne;
     line-height: 37px;
     padding: 9px 72px;
-    font-family: syne;
 }
 
 .ff-btn.ff-btn-submit.ff-btn-lg.submit_button_p6.ff_btn_no_style:hover {/*Style du bouton submit survolé*/
@@ -187,10 +191,7 @@ nav ul li :hover {
     display: flex;
     width: 192px;
     height: 128px;
-    background-color: #C02E44;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: center cover no-repeat;
     align-items: center;
     justify-content: center;
 }
@@ -350,30 +351,29 @@ input.submit-button-cmd:hover {
     }
 
     nav {
-        margin-left: auto;
-        width: 185px;
+        margin: auto;
+        margin-right: 15px;
+        width: 140px;
     }
 
     nav ul {
         flex-direction: column;
     }
 
-    nav ul li {
-        padding: 0px;
-        min-width: 150px;
-        width: fit-content;
+    nav ul li, nav ul li:last-child {
+        margin: 0;
+        padding: 0;
+        width: 140px;
         text-align: center;
+        display: block;
         border: solid 1px #cacaca;
         border-radius: 9px;
-        margin: 3px 0px;
+        margin: 1.5px 0px 1.5px 0px;
     }
 
-    nav ul li a{
+    nav ul li a, nav ul li:last-child a{
         font-size: 16px;
-    }
-
-    nav ul li:last-child {
-        padding: 0px;
+        padding: 0;
     }
     
 /********Responsive du formulaire de commande******/
@@ -421,12 +421,17 @@ input.submit-button-cmd:hover {
 
     nav ul{
         margin-left: 10%;
+        align-items: stretch;
     }
-    nav ul li {
-        min-width: 100px;
+    nav ul li, nav ul li:last-child {
+        width: 100px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 1px;
     }
 
-    nav ul li a{
+    nav ul li a, nav ul li:last-child a{
         font-size: 12px;
     }
 
