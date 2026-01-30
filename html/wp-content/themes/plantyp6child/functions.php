@@ -40,8 +40,11 @@ function send_command_form()
         //Création de la date de commande
         $date = date ('d/m/Y');
 
-        //définition de l'administrateur du site comme destinataire du mail
-        $dest = get_option( 'admin_email' );
+        //définition du destinataire principal
+        $mainDest = 'planty.drinks@gmail.com';
+
+        //définition de l'administrateur du site comme destinataire Cc du mail
+        $ccDest = get_option( 'admin_email' );
 
         //définition du sujet du mail
         $subject = 'nouvelle commande de : '. $fullName;
@@ -65,10 +68,11 @@ function send_command_form()
         //création des headers du message
         $headers = ['Content-Type: text/html; charset=UTF-8',
         'from: www.planty.local',
+        'Cc: ' . $ccDest ,
         'Reply-To: ' . $fullName . ' <' . $mail . '>' ,];
 
         //envoi du mail
-        wp_mail( $dest, $subject, $mail_body, $headers );
+        wp_mail( $mainDest, $subject, $mail_body, $headers );
 
         //Evite les envois multiples
         wp_redirect( add_query_arg( 'sent', '1', wp_get_referer() ) );
