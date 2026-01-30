@@ -15,9 +15,11 @@ function send_command_form()
     {
         error_log('send_command_form exécutée');
 
+        //Si le bouton Commander n'a pas été actionné, on sort...
         if (!isset($_POST['command-submit']))
             { return;}
-            
+        
+        //Sécurisation du formulaire    
         if (!isset($_POST['form_command_nonce']) || !wp_verify_nonce($_POST['form_command_nonce'], 'form_command_action'))
             { return;}
             
@@ -30,12 +32,13 @@ function send_command_form()
         $postcode = sanitize_text_field( $_POST['userpostcode'] ?? '' );
         $town = sanitize_text_field( $_POST['usertown'] ?? '' );
 
-        $date = date ('d/m/Y');
-
         $fraise = sanitize_text_field( $_POST['fraise'] ?? '' );
         $pamplemousse = sanitize_text_field( $_POST['pamplemousse'] ?? '' );
         $framboise = sanitize_text_field( $_POST['framboise'] ?? '' );
         $citron = sanitize_text_field( $_POST['citron'] ?? '' );
+
+        //Création de la date de commande
+        $date = date ('d/m/Y');
 
         //définition de l'administrateur du site comme destinataire du mail
         $dest = get_option( 'admin_email' );
@@ -59,7 +62,7 @@ function send_command_form()
             </body>
         </html>';
 
-        //création des headers
+        //création des headers du message
         $headers = ['Content-Type: text/html; charset=UTF-8',
         'from: www.planty.local',
         'Reply-To: ' . $fullName . ' <' . $mail . '>' ,];
@@ -67,6 +70,7 @@ function send_command_form()
         //envoi du mail
         wp_mail( $dest, $subject, $mail_body, $headers );
 
+        //Evite les envois multiples
         wp_redirect( add_query_arg( 'sent', '1', wp_get_referer() ) );
         exit;
 
