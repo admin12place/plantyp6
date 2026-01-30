@@ -39022,3 +39022,6 @@
 127.0.0.1 - - [29/Jan/2026:20:05:07 +0100] "GET / HTTP/1.1" 301 655 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0"
 127.0.0.1 - - [30/Jan/2026:08:27:42 +0100] "POST /wp-cron.php?doing_wp_cron=1769758062.5099749565124511718750 HTTP/1.1" 200 269 "-" "WordPress/6.9; https://www.planty.local"
 127.0.0.1 - - [30/Jan/2026:08:27:37 +0100] "GET / HTTP/1.1" 301 655 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0"
+127.0.0.1 - - [30/Jan/2026:08:35:29 +0100] "POST /wp-cron.php?doing_wp_cron=1769758529.9377110004425048828125 HTTP/1.1" 200 269 "-" "WordPress/6.9; https://www.planty.local"
+127.0.0.1 - - [30/Jan/2026:08:35:29 +0100] "GET /wp-admin/ HTTP/1.1" 302 400 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0"
+127.0.0.1 - - [30/Jan/2026:08:38:48 +0100] "GET / HTTP/1.1" 301 655 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0"
