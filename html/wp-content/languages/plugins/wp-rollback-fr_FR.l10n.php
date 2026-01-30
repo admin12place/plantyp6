@@ -1,0 +1,2 @@
+<?php
+return ['x-generator'=>'GlotPress/4.0.3','translation-revision-date'=>'2024-01-01 17:53:38+0000','plural-forms'=>'nplurals=2; plural=n > 1;','project-id-version'=>'Plugins - WP Rollback &#8211; Rollback Plugins and Themes - Stable (latest release)','language'=>'fr','messages'=>['https://wprollback.com/'=>'https://wprollback.com/','WP Rollback'=>'WP Rollback ','Rollback (or forward) any WordPress.org plugin, theme or block like a boss.'=>'Retour vers les versions précédentes de toute extension ou thème WordPress.org comme un chef.']];

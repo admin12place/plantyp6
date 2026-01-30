@@ -1,0 +1,8 @@
+#wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: blanchedalmond;
+}

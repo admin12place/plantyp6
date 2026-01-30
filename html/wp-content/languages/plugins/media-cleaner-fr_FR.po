@@ -1,0 +1,217 @@
+# Translation of Plugins - Media Cleaner: Clean your WordPress! - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Media Cleaner: Clean your WordPress! - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-03-30 20:17:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Media Cleaner: Clean your WordPress! - Stable (latest release)\n"
+
+#: classes/rest.php:1212
+msgid "This feature for Pro users."
+msgstr "Cette fonctionnaité est réservée aux utilisateurs/utilisatrices Pro."
+
+#: classes/rest.php:314
+msgid "The postId parameter must be null or an integer."
+msgstr "Le paramètre postId doit être nul ou un entier."
+
+#: classes/rest.php:222
+msgid "References were reset."
+msgstr "Les références ont été réinitialisées."
+
+#: classes/rest.php:216
+msgid "Issues and References were reset."
+msgstr "Les questions et les références ont été réinitialisées."
+
+#: classes/rest.php:331
+msgid "No source was mentioned while calling the extract_references action."
+msgstr "Aucune source n’a été mentionnée lors de l’appel de l’action extract_references."
+
+#: classes/rest.php:262
+msgid "No source was mentioned while calling all_ids."
+msgstr "Aucune source n’a été mentionnée lors de l’appel à all_ids."
+
+#: classes/rest.php:238
+msgid "No source was mentioned while calling count."
+msgstr "Aucune source n’a été mentionnée lors de l’appel au décompte."
+
+#: classes/rest.php:209
+msgid "Issues were reset."
+msgstr "Les questions ont été réinitialisées."
+
+#: common/ratings.php:106
+msgid "✌️ Done!"
+msgstr "✌️ Terminé !"
+
+#: common/ratings.php:95
+msgid "<h2 style=\"margin: 0\" class=\"title\">You have been using <b>%1$s</b> for some time now. Thank you! 💕</h2><p>If you have a minute, can you write a <b><a target=\"_blank\" href=\""
+msgstr "<h2 style=\"margin: 0\" class=\"title\">Vous utilisez <b>%1$s</b> depuis un certain temps déjà. Merci ! 💕</h2><p>Si vous avez une minute, pouvez-vous écrire un <b><a target=\"_blank\" href=\""
+
+#: common/news.php:101
+msgid "❌ Delete"
+msgstr "❌ Supprimer"
+
+#: common/news.php:92
+msgid "👉 AI Engine at WordPress.org"
+msgstr "👉 Le moteur d’IA de WordPress.org"
+
+#: common/news.php:87
+msgid "<p style=\"font-size: 14px;\">Since the end of 2022, I worked a lot to craft <b>the perfect AI plugin for WordPress</b>. Since March 2023, it's perfectly stable and packed with features. You'll get chatbots, AI forms, easy model training, content and images generation, a template system that will allow you to create your personal assistants for various tasks and much more! Here it is: <a href=\"%s\" target=\"_blank\">AI Engine</a>. Believe me, you will enjoy this. Have fun, and let me know how it goes! 🥳</p>"
+msgstr "<p style=\"font-size: 14px;\">Depuis la fin de l’année 2022, j’ai beaucoup travaillé pour concevoir <b>l’extension IA parfaite pour WordPress</b>. Depuis mars 2023, il est parfaitement stable et rempli de fonctionnalités. Vous obtiendrez des chatbots, des formulaires d’IA, un entraînement facile des modèles, la génération de contenu et d’images, un système de modèles qui vous permettra de créer vos assistants personnels pour diverses tâches et bien plus encore ! Le voici : <a href=\"%s\" target=\"_blank\">AI Engine</a>. Croyez-moi, vous allez vous régaler. Amusez-vous bien et tenez-moi au courant ! 🥳</p>"
+
+#: common/news.php:84
+msgid "<h2 style=\"margin: 0 0 10px 0\" class=\"title\">AI Engine by Meow Apps: The Power of AI into WordPress 💫</h2>"
+msgstr "<h2 style=\"margin: 0 0 10px 0\" class=\"title\">AI Engine by Meow Apps : La puissance de l’IA dans WordPress 💫</h2>"
+
+#. Description of the plugin
+#: media-cleaner.php
+msgid "Clean your WordPress! Eliminate unused and broken media files. For a faster, and better website."
+msgstr "Nettoyez votre WordPress ! Éliminez les fichiers multimédias inutilisés et endommagés. Pour un site plus rapide et meilleur."
+
+#: classes/core.php:2172
+msgid "Not found in content"
+msgstr "Non trouvé dans le contenu"
+
+#: common/news.php:96 common/ratings.php:114
+msgid "⏰ Remind me later"
+msgstr "⏰ Me le rappeler ultérieurement"
+
+#. Author URI of the plugin
+#: media-cleaner.php
+msgid "https://jordymeow.com"
+msgstr "https://jordymeow.com"
+
+#: common/admin.php:206
+msgid "<a target=\"_blank\" href=\"https://meowapps.com\">Get the <u>Pro Version</u></a>"
+msgstr "<a target=\"_blank\" href=\"https://meowapps.com\">Obtenir la <u>version Pro</u></a>"
+
+#: common/admin.php:206
+msgid "License Issue"
+msgstr "Problème de licence"
+
+#: common/admin.php:202
+msgid "<a href=\"admin.php?page=%s_settings\">Settings</a>"
+msgstr "<a href=\"admin.php?page=%s_settings\">Réglages</a>"
+
+#: classes/rest.php:422
+msgid "No files for this path (%s)."
+msgstr "Aucun fichier pour ce chemin (%s)."
+
+#: classes/init.php:5
+msgid "Thanks for installing the Pro version of Media Cleaner :) However, the free version is still enabled. Please disable or uninstall it."
+msgstr "Merci d’avoir installé la version Pro de Media Cleaner :) Cependant, la version gratuite est toujours activée. Veuillez la désactiver ou la désinstaller."
+
+#: classes/ui.php:47
+msgid "Cleaner"
+msgstr "Cleaner"
+
+#: classes/engine.php:282
+msgid "Extracted references from %d medias in %s."
+msgstr "Références extraites de %d medias dans %s."
+
+#: classes/core.php:2184
+msgid "No attached file"
+msgstr "Aucun fichier joint"
+
+#: classes/core.php:2175
+msgid "Not in Library"
+msgstr "Pas dans la bibliothèque"
+
+#: classes/engine.php:247
+msgid "Skipped, as Media Library is not selected."
+msgstr "Passé, car la bibliothèque n’est pas sélectionnée."
+
+#: classes/engine.php:242
+msgid "Skipped, as it is not needed for the Media Library method."
+msgstr "Passé, car ce n’est pas nécessaire pour la méthode de la médiathèque."
+
+#. translators: %1$d is number of posts, %2$s is time in milliseconds
+#: classes/engine.php:140
+msgid "Extracted references from %1$d posts in %2$s."
+msgstr "Références extraites de %1$d publications dans %2$s."
+
+#: classes/engine.php:69 classes/engine.php:74
+msgid "Skipped, as Content is not selected."
+msgstr "Passé, car le contenu n’est pas sélectionné."
+
+#. translators: %1$s is the version of the interface; %2$s is a file path.
+#: common/admin.php:329
+msgid "Thanks for using <a href=\"https://meowapps.com\">Meow Apps</a>! This is the Meow Admin %1$s <br /><i>Loaded from %2$s </i>"
+msgstr "Merci d’utiliser <a href=\"https://meowapps.com\">Meow Apps</a> ! Ceci est l’administration Meow de %1$s <br /><i>chargée depuis %2$s </i>"
+
+#: common/admin.php:205
+msgid "Pro Version"
+msgstr "Version Pro"
+
+#: common/admin.php:244
+msgid "Remove the license"
+msgstr "Supprimer la licence"
+
+#: common/admin.php:237
+msgid "<p>It looks like you are using the free version of the plugin (<b>%s</b>) but a license for the Pro version was also found. The Pro version might have been replaced by the Free version during an update (might be caused by a temporarily issue). If it is the case, <b>please download it again</b> from the <a target=\"_blank\" href=\"https://meowapps.com\">Meow Store</a>. If you wish to continue using the free version and clear this message, click on this button."
+msgstr "<p>Il semble que vous utilisez la version gratuite de l’extension (<b>%s</b>) mais une licence pour la version Pro a également été trouvée. La version Pro peut avoir été remplacée par la version gratuite lors d’une mise à jour (peut être causée par un problème temporaire). Si c’est le cas, <b>veuillez la télécharger à nouveau</b> depuis la <a target=\"_blank\" href=\"https://meowapps.com\">boutique Meow</a>. Si vous souhaitez continuer à utiliser la version gratuite et effacer ce message, cliquez sur ce bouton."
+
+#: common/ratings.php:120
+msgid "Hide"
+msgstr "Masquer"
+
+#. translators: %1$d is a number of targets, %2$d is a number of issues, %3$s
+#. is elapsed time in milliseconds
+#: classes/rest.php:576
+msgid "Checked %1$d targets and found %2$d issues in %3$s."
+msgstr "A vérifié %1$d cibles et a trouvé %2$d problèmes dans %3$s."
+
+#: classes/rest.php:425 classes/rest.php:464
+msgid "Retrieved %d targets."
+msgstr "Récupéré %d cibles."
+
+#: classes/core.php:2181
+msgid "Orphan WebP"
+msgstr "WebP orpheline"
+
+#: classes/rest.php:201
+msgid "Invalid Regular-Expression"
+msgstr "Expression régulière non valide"
+
+#: common/admin.php:294
+msgid "<label>Hide <b>Meow Apps</b> Menu</label><br /><small>Hide Meow Apps menu and all its components, for a cleaner admin. This option will be reset if a new Meow Apps plugin is installed.<br /><b>Once activated, an option will be added in your General settings to display it again.</b></small>"
+msgstr "<label>Masquer le menu <b>Meow Apps</b></label><br /><small>Masquer le menu Meow Apps et tous ses composants, pour une administration plus propre. Cette option sera réinitialisée si une nouvelle extension Meow Apps est installée. <b>Une fois activée, une option sera ajoutée à vos réglages généraux pour l’afficher à nouveau.</b></small>"
+
+#: classes/ui.php:125
+msgid "Restore with Media Cleaner"
+msgstr "Restaurer avec Media Cleaner"
+
+#: classes/ui.php:122
+msgid "Trash with Media Cleaner"
+msgstr "Mettre à la corbeille avec Media Cleaner"
+
+#: classes/ui.php:119
+msgid "Delete with Media Cleaner"
+msgstr "Supprimer avec Media Cleaner"
+
+#: common/admin.php:273 common/admin.php:274
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#. Plugin URI of the plugin
+#: media-cleaner.php
+msgid "https://meowapps.com"
+msgstr "https://meowapps.com"
+
+#. Author of the plugin
+#: media-cleaner.php
+msgid "Jordy Meow"
+msgstr "Jordy Meow"
+
+#. Plugin Name of the plugin
+#: media-cleaner.php
+msgid "Media Cleaner"
+msgstr "Media Cleaner"
+
+#: classes/core.php:2178
+msgid "Orphan Retina"
+msgstr "Retina orphelin"
