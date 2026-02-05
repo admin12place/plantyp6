@@ -82,21 +82,24 @@ function send_command_form()
 
 add_action( 'init', 'send_command_form');
 
+//LE HOOK DU NAV_MENU
+
 add_filter( 'wp_nav_menu_items', 'add_admin_link_before_last_item', 10, 2 );
 
 function add_admin_link_before_last_item( $items, $args ) {
     
-    // S'il n'y a pas d'utilisateur loggé ou si le menu n'est pas le menu principal,
+    // S'il n'y a pas d'utilisateur loggé si le menu n'est pas lié à un emplacement ou si le menu n'est pas le menu principal,
     // on garde le menu en l'état.
     if (
         ! is_user_logged_in()
+        || ! current_user_can( 'edit_posts' )
         || ! isset( $args->theme_location )
         || $args->theme_location !== 'main-menu'
     ) {
         return $items;
     }
 
-    // Découper la chaine contenant les <li> existants en un tableau
+    // Découper la chaine contenant les <li> existants (regex) en un tableau
     preg_match_all( '/<li[^>]*>.*?<\/li>/s', $items, $matches );
     $menu_items = $matches[0];
     $count = count( $menu_items );

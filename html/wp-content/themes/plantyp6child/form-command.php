@@ -1,16 +1,16 @@
 <?php
-if (! defined('ABSPATH'))
+if (! defined('ABSPATH'))//Protection pour éviter un accès hors WP
     {
         exit;
     }
 
 function command_form_p6(){
-    ob_start();//Buffer pour que le form soit envoyé en 1 bloc et non pas à la volée
+    ob_start();//Buffer pour que le form soit sous forme de chaine et d'utiliser la fonction comme shortcode. Evite d'avoir à concatener le html
 ?>
 
 <form method="post" class="command-form" >
- <?php wp_nonce_field( 'form_command_action', 'form_command_nonce' ); ?><!--Protection du formulaire-->
-
+ <?php wp_nonce_field( 'form_command_action', 'form_command_nonce' ); ?><!--Protection du formulaire qui ne peut être soumis que depuis le site-->
+ 
     <div>
     
         <div id="bloc-images">
