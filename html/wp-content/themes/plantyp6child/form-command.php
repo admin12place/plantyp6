@@ -5,11 +5,11 @@ if (! defined('ABSPATH'))
     }
 
 function command_form_p6(){
-    ob_start();
+    ob_start();//Buffer pour que le form soit envoyé en 1 bloc et non pas à la volée
 ?>
 
 <form method="post" class="command-form" >
- <?php wp_nonce_field( 'form_command_action', 'form_command_nonce' ); ?>
+ <?php wp_nonce_field( 'form_command_action', 'form_command_nonce' ); ?><!--Protection du formulaire-->
 
     <div>
     
@@ -109,5 +109,5 @@ function command_form_p6(){
 
 </form>
 <?php
-    return ob_get_clean();
+    return ob_get_clean();//récupère le formulaire
 }
