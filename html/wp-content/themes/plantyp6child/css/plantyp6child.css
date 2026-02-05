@@ -16,7 +16,9 @@ a {
     letter-spacing: 0.1px;
 }
 
-/*CSS DU HEADER*/
+/*******************************************************/
+/**********************CSS DU HEADER********************/
+/*******************************************************/
 
 .headerp6 {
     display: flex;
@@ -86,7 +88,9 @@ nav ul li :hover {
     padding-left: 0px;
 }
 
-/*CSS DU FOOTER*/
+/*******************************************************/
+/********************CSS DU FOOTER**********************/
+/*******************************************************/
 
 #can-line {
     height: 162px;
@@ -103,7 +107,9 @@ nav ul li :hover {
     font-size: 16px;
 }
 
-/*CSS FORMULAIRE DE CONTACT*/
+/*******************************************************/
+/**************CSS FORMULAIRE DE CONTACT****************/
+/*******************************************************/
 
 .ff-btn.ff-btn-submit.ff-btn-lg.submit_button_p6.ff_btn_no_style {/*Style du bouton submit*/
     background-color: #E0B9B4;
@@ -175,7 +181,8 @@ nav ul li :hover {
     display: flex;
     width: 192px;
     height: 128px;
-    background: center cover no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
 }
@@ -311,7 +318,6 @@ input.submit-button-cmd:hover {
 .submit-msg {
     width: 100%;
     text-align: center;
-    text-wrap: no-wrap;
     margin-top: 29px;
     color:#FFFFFF;
     font-size: 20px;
