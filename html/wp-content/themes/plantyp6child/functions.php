@@ -71,7 +71,7 @@ function send_command_form()
 
         //création des headers du message
         $headers = ['Content-Type: text/html; charset=UTF-8',
-        'from: www.planty.local',
+        'from: ' . $mail ,
         'Cc: ' . $ccDest ,
         'Reply-To: ' . $fullName . ' <' . $mail . '>' ,];
 

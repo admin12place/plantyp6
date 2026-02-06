@@ -263,7 +263,7 @@ input[type="number"] {
     flex-direction: column;
 }
 
-.label-cmd {
+label.label-cmd {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 400;
@@ -383,6 +383,7 @@ input.submit-button-cmd:hover {
 
     .bloc-form-right, .bloc-form-left {
         padding: 0px;
+        margin: auto;
     }
     
     h3.bloc-form-title {
