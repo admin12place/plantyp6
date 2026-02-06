@@ -5,7 +5,7 @@ if (! defined('ABSPATH'))//Protection pour éviter un accès hors WP
     }
 
 function command_form_p6(){
-    ob_start();//Buffer pour que le form soit sous forme de chaine et d'utiliser la fonction comme shortcode. Evite d'avoir à concatener le html
+    ob_start();//Buffer pour que le form soit sous forme de chaine et utiliser la fonction comme shortcode. Evite d'avoir à concatener le html
 ?>
 
 <form method="post" class="command-form" >
@@ -85,7 +85,7 @@ function command_form_p6(){
 
                 <div class="bloc-form-champs">
                     <label for="userpostcode" class="label-cmd">Code postal</label>
-                    <input  type="text" id="userpostcode" name="userpostcode" class="input-cmd" required size="40">
+                    <input  type="text" id="userpostcode" name="userpostcode" class="input-cmd" required size="10">
                 </div>
 
                 <div class="bloc-form-champs">
@@ -109,5 +109,5 @@ function command_form_p6(){
 
 </form>
 <?php
-    return ob_get_clean();//récupère le formulaire
+    return ob_get_clean();//retourne le formulaire
 }

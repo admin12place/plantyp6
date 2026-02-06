@@ -9,7 +9,11 @@ function theme_enqueue_styles()
 
 require_once get_stylesheet_directory() . '/form-command.php';//fichier à inclure une seule fois
 
+//AJOUT DU SHORTCODE DE LA PAGE DE COMMANDE
+
 add_shortcode('formulaire_p6_commande', 'command_form_p6');
+
+//ENVOI DU FORMULAIRE DE COMMANDE
 
 function send_command_form()
     {
@@ -77,7 +81,6 @@ function send_command_form()
         //Evite les envois multiples
         wp_redirect( add_query_arg( 'sent', '1', wp_get_referer() ) );
         exit;
-
     }
 
 add_action( 'init', 'send_command_form');
